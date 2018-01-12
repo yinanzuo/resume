@@ -2,8 +2,6 @@ var urlParams = {};
 var username;
 var trackerId = 'UA-21222559-1';
 
-alert(trackerId);
-
 (function () {
     var e,
         a = /\+/g,  // Regex for replacing addition symbol with a space
@@ -63,6 +61,8 @@ var github_user_repos = function(username, callback, page_number, prev_data) {
     var page = (page_number ? page_number : 1),
         url = 'https://api.github.com/users/' + username + '/repos?per_page=100&callback=?',
         data = (prev_data ? prev_data : []);
+
+        alert('page'+page);
 
     if (page_number > 1) {
         url += '&page=' + page_number;
