@@ -2,6 +2,8 @@ var urlParams = {};
 var username;
 var trackerId = 'UA-21222559-1';
 
+alert(trackerId);
+
 (function () {
     var e,
         a = /\+/g,  // Regex for replacing addition symbol with a space
